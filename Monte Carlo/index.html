@@ -1,0 +1,62 @@
+<!-- 
+* MONTE CARLO SIMULATION FOR APPROXIMATION OF PI.
+* Author- SAJAL AGRAWAL
+* @sajal.agrawal1997@gmail.com
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monte Carlo Simulation | Sajal Agrawal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- latest compiled and minified bootstrap css -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+        <!-- jquery library -->
+        <script src="bootstrap/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <!-- latest compiled and minified javascript -->
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <!-- minified p5.js file -->
+        <script language="javascript" src="js/p5.min.js" type="text/javascript"></script>
+        <!-- p5.js dom library file -->
+        <script language="javascript" src="js/p5.dom.js" type="text/javascript"></script>
+        <!-- processing js file (javascript equivalent to .pde file)-->
+        <script  language="javascript" src="js/sketch.js" type="text/javascript"></script>
+        
+        <style type="text/css">
+		div#main{
+                    width: 520px;
+                    margin-left:20px;
+                    margin-right:80px;
+                    float: left;
+		}
+         </style>
+    </head>     
+    <body>
+        <div class="container-fluid" id="main">                
+            <h2 style="color:#3a5356;"><b>MONTE CARLO METHOD-<br> PI APPROXIMATION</b></h2>
+            <hr>
+            <h4>SIMULATION:</h4>
+            <br><br><br>
+            <p>Framerate:</p>
+            <p><a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo methods</a> are 
+                a broad class of computational algorithms that rely on repeated random sampling to 
+                obtain numerical results. 
+            </p><hr>
+            <h4>METHOD:</h4>
+            <p>To compute the value of PI:</p>
+            <ul>
+                <li>Draw a square, then inscribe a circle within it</li>
+                <li>Uniformly scatter objects of uniform size over the square</li>
+                <li>Count the number of objects inside the circle and the total number of objects</li>
+            </ul>
+            <p>Now suppose you do m experiments and in n of those experiments, the random point chosen 
+            falls within the upper right quarter of the unit circle. Since the area of a circle is 
+            known to be pi*r^2 and the area of a square is r^2, the following equations hold:
+            </p>
+            <img src="formula.jpg" alt="formular" width="500">
+        </div>
+    </body>
+</html>
